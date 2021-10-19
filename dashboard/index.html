@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page title -->
+    <title>Reroot - Dashboard</title>
+
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex-wrapper flex p-a-xs ">
+        <div class="sidebar">
+            <div class="w-full p-x-m p-b-s b-b">
+                <img src="images/reroot.svg" alt="logo image" class="logo">
+            </div>
+            <div class="flex ai-center p-x-s">
+                <div class=" profile">
+                </div>
+                <div class="col-11">
+                    <h5>Olivander</h5>
+                    <p class="email">olivander@hogwarts</p>
+                </div>
+            </div>
+            <div class="links">
+                <div class="p-a-xs">
+                    <div class="wrapper p-a-xs flex ai-center jc-start">
+                    <span class="material-icons-outlined icon">
+                        dashboard
+                    </span>
+                    <p class="sidebar-link m-l-s">Dashboard</p>
+                    </div>
+                </div>
+                <div class="p-a-xs">
+                    <div class="wrapper p-a-xs flex ai-center jc-start active-container">
+                    <span class="material-icons-outlined icon active">
+                        work_outline
+                        </span>
+                    <p class="sidebar-link m-l-s active">Orders</p>
+                        </div>
+                </div>
+                <div class="p-a-xs ">
+                    <div class="wrapper p-a-xs flex ai-center jc-start">
+                    <span class="material-icons-outlined icon">
+                        auto_fix_high
+                        </span>
+                    <p class="sidebar-link m-l-s">Magic wands</p>
+                        </div>
+                </div>
+                <div class="p-a-xs">
+                    <div class="wrapper p-a-xs flex ai-center jc-start">
+                    <span class="material-icons-outlined icon">
+                        people
+                        </span>
+                    <p class="sidebar-link m-l-s">Customers</p>
+                    </div>
+                </div>
+                <div class="p-a-xs m-b-l">
+                    <div class="wrapper p-a-xs flex ai-center jc-start">
+                    <span class="material-icons-outlined icon">
+                        description
+                        </span>                        
+                    <p class="sidebar-link m-l-s">Reports</p>
+                    </div>
+                </div>
+                <div class="p-a-xs">
+                    <div class="wrapper p-a-xs flex ai-center jc-start">
+                    <span class="material-icons-outlined icon">
+                        person
+                    </span>
+                    <p class="sidebar-link m-l-s">User Profile</p>
+                    </div>
+                </div>
+                <div class="p-a-xs"> 
+                    <div class="wrapper p-a-xs flex ai-center jc-start">
+                        <span class="material-icons-outlined icon">
+                            settings
+                        </span>
+                    <p class="sidebar-link m-l-s">Settings</p>
+                    </div>
+                </div>
+                <div class="p-a-xs">
+                    <div class="wrapper p-a-xs flex ai-center jc-start">
+                    <span class="material-icons-outlined icon">
+                        notifications
+                    </span>
+                    <p class="sidebar-link m-l-s">Notifications</p>
+                    </div>
+                </div>
+                <hr class="devider m-y-m">
+                <div class="p-a-xs">
+                    <div class="wrapper p-a-xs flex ai-center jc-start">
+                    <span class="material-icons-outlined icon">
+                        logout
+                        </span>
+                    <p class="sidebar-link m-l-s">Log out</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-container p-a-m w-full">
+            <div class="header__links">
+                <a href="../reroot-landing-page/index.html" class="header__link">Landing Page</a>
+            </div>
+            <h2 class="title ta-left">Orders</h2>
+            <div class="cta-container flex jc-between ai-center fw-wrap">
+                <div class="col-4 col-s-12 relative">
+                    <span class="material-icons-outlined search">
+                        search
+                    </span>
+                    <input type="text" class="search-input relative" placeholder="Search for an order">
+                </div>
+                <button class="cta-btn">+ Add new order</button>
+            </div>
+            <div class="navbar w-full flex m-t-m p-b-s b-b">
+                <a href="" class="navbar-link-active relative">All (10)</a>
+                <a href="" class="navbar-link">New (1)</a>
+                <a href="" class="navbar-link">In Progress (4)</a>
+                <a href="" class="navbar-link">Drafting (2)</a>
+                <a href="" class="navbar-link">Accepted (2)</a>
+                <a href="" class="navbar-link">Canceled (4)</a>
+            </div>
+            <div class="w-full flex p-y-s jc-end ai-center">
+                <div class="flex">
+                    <span class="material-icons-outlined icon active">
+                        filter_alt
+                    </span>
+                    <p class="m-x-xs">Filter</p>
+                </div>
+                <p class="m-x-s">Sort by</p>
+                <select class="select">
+                    <option>Number up</option>
+                </select>
+            </div>
+            <div class="table-wrapper">
+                <table class="m-t-s br-rounded">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="toggle"></th>
+                        <th scope="col" class="number">#</th>
+                        <th scope="col" class="table-heading">Date</th>
+                        <th scope="col" class="table-heading">Name</th>
+                        <th scope="col" class="table-heading">Total Price</th>
+                        <th scope="col" class="table-heading">Payment status</th>
+                        <th scope="col" class="edit"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="toggle">
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">1</td>
+                        <td data-label="Date">24.10.2020</td>
+                        <td data-label="Name" data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Harry Potter</p>
+                        </td>
+                        <td data-label="Total Price">$ 67</td>
+                        <td data-label="Payment status">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box yellow"></span>
+                            <p class="m-l-xs">On pending</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">2</td>
+                        <td data-label="Date">16.02.2020</td>
+                        <td data-label="Name" data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Draco Malfoy</p>
+                        </td>
+                        <td data-label="Total Price">$ 25</td>
+                        <td data-label="Payment">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box green"></span>
+                            <p class="m-l-xs">Paid</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">3</td>
+                        <td data-label="Date">11.05.2020</td>
+                        <td data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Neville Longbottom</p>
+                        </td>
+                        <td data-label="Total Price">$ 13</td>
+                        <td data-label="Payment">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box yellow"></span>
+                            <p class="m-l-xs">On pending</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">4</td>
+                        <td data-label="Date">05.01.2020</td>
+                        <td data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Rolanda Hooch</p>
+                        </td>
+                        <td data-label="Total Price">$ 52</td>
+                        <td data-label="Payment">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box green"></span>
+                            <p class="m-l-xs">Paid</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">5</td>
+                        <td data-label="Date">19.11.2020</td>
+                        <td data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Severus Snape</p>
+                        </td>
+                        <td data-label="Total Price">$ 24</td>
+                        <td data-label="Payment">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box red"></span>
+                            <p class="m-l-xs">Canceled</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">6</td>
+                        <td data-label="Date">05.02.2020</td>
+                        <td data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Angelina Johnson</p>
+                        </td>
+                        <td data-label="Total Price">$ 56</td>
+                        <td data-label="Payment">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box yellow"></span>
+                            <p class="m-l-xs">On pending</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">7</td>
+                        <td data-label="Date">30.11.2020</td>
+                        <td data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Terrence Higghs</p>
+                        </td>
+                        <td data-label="Total Price">$ 48</td>
+                        <td data-label="Payment">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box green"></span>
+                            <p class="m-l-xs">Paid</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">8</td>
+                        <td data-label="Date">22.09.2020</td>
+                        <td data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Hermione Granger</p>
+                        </td>
+                        <td data-label="Total Price">$ 46</td>
+                        <td data-label="Payment">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box red"></span>
+                            <p class="m-l-xs">Canceled</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">9</td>
+                        <td data-label="Date">09.03.2020</td>
+                        <td data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Gregory Goyle</p>
+                        </td>
+                        <td data-label="Total Price">$ 28</td>
+                        <td data-label="Payment">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box yellow"></span>
+                            <p class="m-l-xs">On pending</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td data-label="#">10</td>
+                        <td data-label="Date">15.02.2020</td>
+                        <td data-label="Name" class="profile-wrapper flex ai-center">
+                            <div class="profile-table-img"></div>
+                            <p class="m-l-s">Seamus Finnigan</p>
+                        </td>
+                        <td data-label="Total Price">$ 42</td>
+                        <td data-label="Payment">
+                            <div class="flex ai-center jc-start">
+                            <span class="status-box green"></span>
+                            <p class="m-l-xs">Paid</p>
+                            </div>
+                        </td>
+                        <td class="edit-dots">...</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="w-full m-y-m">
+                    <a class="add-order">+ Add new order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

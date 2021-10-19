@@ -1,0 +1,13 @@
+  /* Images
+ *============================================================================*/
+/**
+ * 1. Images will retain their aspect ratio on screen resizing. They
+      will never scale up to be larger than their original size.
+ * 2. Removes whitespace under images.
+ */
+
+ img {
+    max-width: 100%; /* [1] */
+    height: auto; /* [1] */
+    vertical-align: middle; /* [2] */
+  }

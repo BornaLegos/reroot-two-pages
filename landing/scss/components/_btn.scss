@@ -1,0 +1,30 @@
+  /* Buttons
+   *============================================================================*/
+  
+   button {
+    cursor: pointer;
+  }
+
+  .hero__button {
+    outline: none;
+    border: none;
+    background: #3894ff;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 4px;
+ }
+
+  .brand__button {
+    width: 50%;
+    outline: none;
+    border: none;
+    background: #3894ff;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 36px;
+ }
