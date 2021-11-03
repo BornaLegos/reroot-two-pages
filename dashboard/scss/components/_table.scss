@@ -1,3 +1,5 @@
+  /* Table
+   *============================================================================*/
 table {
   border: 1px solid #ccc;
   border-collapse: collapse;
@@ -6,7 +8,7 @@ table {
   width: 100%;
   table-layout: fixed;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-xs) {
       border: 0;
   }
 
@@ -20,7 +22,7 @@ table {
     border: 1px solid #ddd;
     padding: .35em;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-xs) {
       border-bottom: 3px solid #ddd;
       display: block;
       margin-bottom: .625em;
@@ -37,7 +39,7 @@ table {
     text-align: left;
     color: #626262;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-xs) {
       border-bottom: 1px solid #ddd;
       display: flex;
       font-size: .8em;
@@ -45,7 +47,7 @@ table {
     }
 
       &::before {
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: $screen-xs) {
         /*
         * aria-label has no advantage, it won't be read inside a table
         content: attr(aria-label);
@@ -57,7 +59,7 @@ table {
       }
     }
       &:last-child {
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: $screen-xs) {
           border-bottom: 0;
       }
     }
@@ -78,7 +80,7 @@ table {
   width: 50px;
 }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-xs) {
     table thead {
       border: none;
       clip: rect(0 0 0 0);

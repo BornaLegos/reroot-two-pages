@@ -1,0 +1,32 @@
+/* Margin and Padding
+ *============================================================================*///
+
+.p-a-xs { padding: calc(2px + .25vw); }
+
+.p-x-s { padding-left: calc(8px + .5vw);  padding-right: calc(8px + .5vw); }
+
+.p-x-m { padding-left: calc(16px + 1vw);  padding-right: calc(16px + 1vw); }
+
+.p-b-s { padding-bottom: calc(8px + .5vw); }
+
+.p-a-m { padding: calc(16px + 1vw); }
+
+.p-y-s { padding-top: calc(8px + .5vw);  padding-bottom: calc(8px + .5vw); }
+
+
+
+.m-l-s { margin-left: calc(8px + .5vw); }
+
+.m-b-l { margin-bottom: calc(32px + 2vw); }
+
+.m-y-m { margin-top: calc(16px + 1vw);  margin-bottom: calc(16px + 1vw); }
+
+.m-x-s  { margin-left: calc(8px + .5vw);  margin-right: calc(8px + .5vw); }
+
+.m-x-xs { margin-left: calc(4px + .25vw); margin-right: calc(4px + .25vw); }
+
+.m-t-s { margin-top: calc(8px + .5vw); }
+
+.m-l-xs { margin-left: calc(4px + .25vw); }
+
+.m-t-m { margin-top: calc(16px + 1vw); }

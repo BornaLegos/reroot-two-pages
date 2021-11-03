@@ -15,20 +15,20 @@
 </head>
 
 <body>
-    <div class="flex-wrapper flex p-a-xs ">
+    <div class="flex-wrapper flex p-a-xs">
         <div class="sidebar">
-            <div class="w-full p-x-m p-b-s b-b">
-                <img src="images/reroot.svg" alt="logo image" class="logo">
+            <div class="sidebar__logo w-full p-x-m p-b-s b-b">
+                <img src="images/reroot.svg" alt="logo image" class="sidebar__logo-img">
             </div>
-            <div class="flex ai-center p-x-s">
-                <div class=" profile">
+            <div class="sidebar__profile flex ai-center p-x-s">
+                <div class="sidebar__profile-img">
                 </div>
                 <div class="col-11">
                     <h5>Olivander</h5>
                     <p class="email">olivander@hogwarts</p>
                 </div>
             </div>
-            <div class="links">
+            <div class="sidebar__links">
                 <div class="p-a-xs">
                     <div class="wrapper p-a-xs flex ai-center jc-start">
                     <span class="material-icons-outlined icon">
@@ -93,7 +93,7 @@
                     <p class="sidebar-link m-l-s">Notifications</p>
                     </div>
                 </div>
-                <hr class="devider m-y-m">
+                <hr class="divider m-y-m">
                 <div class="p-a-xs">
                     <div class="wrapper p-a-xs flex ai-center jc-start">
                     <span class="material-icons-outlined icon">
@@ -104,29 +104,31 @@
                 </div>
             </div>
         </div>
-        <div class="dashboard-container p-a-m w-full">
-            <div class="header__links">
-                <a href="../landing/index.html" class="header__link">Landing Page</a>
+        <div class="dashboard w-full p-a-m">
+            <div class="dashboard__link">
+                <a href="../reroot-landing-page/index.html">Landing Page</a>
             </div>
-            <h2 class="title ta-left">Orders</h2>
-            <div class="cta-container flex jc-between ai-center fw-wrap">
+            <div class="dashboard__title">
+                <h2 class="ta-left">Orders</h2>
+            </div>
+            <div class="dashboard__cta flex jc-between ai-center fw-wrap">
                 <div class="col-4 col-s-12 relative">
                     <span class="material-icons-outlined search">
                         search
                     </span>
-                    <input type="text" class="search-input relative" placeholder="Search for an order">
+                    <input type="text" class="search__input relative" placeholder="Search for an order">
                 </div>
                 <button class="cta-btn">+ Add new order</button>
             </div>
-            <div class="navbar w-full flex m-t-m p-b-s b-b">
-                <a href="" class="navbar-link-active relative">All (10)</a>
-                <a href="" class="navbar-link">New (1)</a>
-                <a href="" class="navbar-link">In Progress (4)</a>
-                <a href="" class="navbar-link">Drafting (2)</a>
-                <a href="" class="navbar-link">Accepted (2)</a>
-                <a href="" class="navbar-link">Canceled (4)</a>
+            <div class="dashboard__navbar w-full flex m-t-m p-b-s b-b">
+                <a href="" class="dashboard__navbar-link--active relative">All (10)</a>
+                <a href="" class="dashboard__navbar-link">New (1)</a>
+                <a href="" class="dashboard__navbar-link">In Progress (4)</a>
+                <a href="" class="dashboard__navbar-link">Drafting (2)</a>
+                <a href="" class="dashboard__navbar-link">Accepted (2)</a>
+                <a href="" class="dashboard__navbar-link">Canceled (4)</a>
             </div>
-            <div class="w-full flex p-y-s jc-end ai-center">
+            <div class="dashboard__filter w-full flex p-y-s jc-end ai-center">
                 <div class="flex">
                     <span class="material-icons-outlined icon active">
                         filter_alt
@@ -138,8 +140,8 @@
                     <option>Number up</option>
                 </select>
             </div>
-            <div class="table-wrapper">
-                <table class="m-t-s br-rounded">
+            <div class="dashboard__table">
+                <table class="m-t-s">
                     <thead>
                       <tr>
                         <th scope="col" class="toggle"></th>
@@ -159,7 +161,7 @@
                         <td data-label="#">1</td>
                         <td data-label="Date">24.10.2020</td>
                         <td data-label="Name" data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Harry Potter</p>
                         </td>
                         <td data-label="Total Price">$ 67</td>
@@ -178,7 +180,7 @@
                         <td data-label="#">2</td>
                         <td data-label="Date">16.02.2020</td>
                         <td data-label="Name" data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Draco Malfoy</p>
                         </td>
                         <td data-label="Total Price">$ 25</td>
@@ -197,7 +199,7 @@
                         <td data-label="#">3</td>
                         <td data-label="Date">11.05.2020</td>
                         <td data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Neville Longbottom</p>
                         </td>
                         <td data-label="Total Price">$ 13</td>
@@ -216,7 +218,7 @@
                         <td data-label="#">4</td>
                         <td data-label="Date">05.01.2020</td>
                         <td data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Rolanda Hooch</p>
                         </td>
                         <td data-label="Total Price">$ 52</td>
@@ -235,7 +237,7 @@
                         <td data-label="#">5</td>
                         <td data-label="Date">19.11.2020</td>
                         <td data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Severus Snape</p>
                         </td>
                         <td data-label="Total Price">$ 24</td>
@@ -254,7 +256,7 @@
                         <td data-label="#">6</td>
                         <td data-label="Date">05.02.2020</td>
                         <td data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Angelina Johnson</p>
                         </td>
                         <td data-label="Total Price">$ 56</td>
@@ -273,7 +275,7 @@
                         <td data-label="#">7</td>
                         <td data-label="Date">30.11.2020</td>
                         <td data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Terrence Higghs</p>
                         </td>
                         <td data-label="Total Price">$ 48</td>
@@ -292,7 +294,7 @@
                         <td data-label="#">8</td>
                         <td data-label="Date">22.09.2020</td>
                         <td data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Hermione Granger</p>
                         </td>
                         <td data-label="Total Price">$ 46</td>
@@ -311,7 +313,7 @@
                         <td data-label="#">9</td>
                         <td data-label="Date">09.03.2020</td>
                         <td data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Gregory Goyle</p>
                         </td>
                         <td data-label="Total Price">$ 28</td>
@@ -330,7 +332,7 @@
                         <td data-label="#">10</td>
                         <td data-label="Date">15.02.2020</td>
                         <td data-label="Name" class="profile-wrapper flex ai-center">
-                            <div class="profile-table-img"></div>
+                            <div class="profile__table-img"></div>
                             <p class="m-l-s">Seamus Finnigan</p>
                         </td>
                         <td data-label="Total Price">$ 42</td>

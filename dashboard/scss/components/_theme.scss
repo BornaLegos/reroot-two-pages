@@ -12,34 +12,19 @@
 
 $colors-themes: (
   primary: (
-    theme    : #3f51b5,
-    primary  : rgba(255,255,255,1),
-    secondary: rgba(255,255,255,.8),
-    tertiary : rgba(255,255,255,.15)
+    theme    : #fff,
+    primary  : #f6f8fa,
+    secondary: #435996
   ),
-  accent: (
-    theme    : #ff4081,
-    primary  : rgba(255,255,255,1),
-    secondary: rgba(255,255,255,.8),
-    tertiary : rgba(255,255,255,.15)
-  ),
-  warn: (
-    theme    : #dc143c,
-    primary  : rgba(255,255,255,1),
-    secondary: rgba(255,255,255,.8),
-    tertiary : rgba(255,255,255,.15)
+  text: (
+    theme    : #000,
+    primary  : #626262,
+    secondary: #a0a0a0
   ),
   status: (
     theme    : #f4c94a,
     primary  : #ed5757,
-    secondary: #28ad60,
-    tertiary : rgba(0,0,0,.15)
-  ),
-  dark: (
-    theme    : #212121,
-    primary  : rgba(255,255,255,1),
-    secondary: rgba(255,255,255,.8),
-    tertiary : rgba(255,255,255,.15)
+    secondary: #28ad60
   )
 );
 
@@ -73,6 +58,5 @@ $fonts: (
     --theme    : var(--#{$group-name}-theme);
     --primary  : var(--#{$group-name}-primary);
     --secondary: var(--#{$group-name}-secondary);
-    --tertiary : var(--#{$group-name}-tertiary);
   }
 }
