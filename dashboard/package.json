@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "node-sass --watch index.scss --style compressed"
+    "build": "node-sass index.scss --style compressed -o dist",
+    "start": "npm run build && node-sass --watch index.scss --style compressed -o dist"
   },
   "keywords": [],
   "author": "",
